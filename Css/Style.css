@@ -1,3 +1,366 @@
-*{
+* {
     text-align: center;
+}
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.back-vid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/* NAVBAR */
+.navbar {
+    background-color: rgba(22, 22, 77, 0.39);
+    padding: 20px;
+    display: grid;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    color: black;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgba(246, 246, 252, 0.781);
+}
+
+/* MAIN SECTION */
+.titulo {
+    color: rgb(9, 13, 241);
+    margin-top: 400px;
+    margin-bottom: 100px;
+}
+.titulo-p{
+    color: blue;
+}
+.titulo img{
+    width: 500px;
+}
+
+.texto {
+    color: rgb(21, 117, 228);
+    grid-area: texto;
+}
+
+.texto2 {
+    color: rgba(248, 191, 4, 0.836);
+}
+
+.texto3 {
+    color: rgb(255, 255, 255);
+    grid-area: texto2;
+    margin-top: 80px;
+}
+
+.texto4 {
+    color: darkred;
+}
+
+.texto5 {
+    color: rgb(146, 144, 144);
+}
+
+.texto6 {
+    color: saddlebrown;
+}
+.texto7{
+    grid-area:texto3
+}
+
+.info-StarWars {
+    color: rgb(213, 213, 213);
+    padding: 20px;
+    margin-left: 180px;
+    margin-right: 180px;
+    background-color: hsla(0, 0%, 0%, 0.578);
+    display: grid;
+    grid-template-areas: "texto texto texto"
+                         "gif texto2 texto2"
+                         "gif texto2 texto2"
+                         "texto3 texto3 texto3";
+    grid-template-columns: 530px;                                      
+}
+.gifluke{
+    grid-area: gif;
+    margin-top: 30px;
+}
+
+.formulario {
+    color: rgb(213, 213, 213);
+    text-align: center;
+    padding: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color: hsla(29, 92%, 49%, 0.479);
+    display: grid;
+}
+
+.ventas {
+    color: rgb(213, 213, 213);
+    text-align: center;
+    padding: 20px;
+    margin-left: 480px;
+    margin-right: 480px;
+    background-color: hsla(0, 1%, 55%, 0.445);
+    display: grid;
+}
+
+
+/* ########################################### PRODUCTOS #############################################################*/
+.producto1{
+    display: grid;
+    grid-template-areas: ". img1 producto1"
+                         ". img1 precio1"
+                         ". img1 precio1";
+    grid-template-columns: 10px;  
+}
+.producto1 h3{
+    grid-area:producto1;
+}
+.producto1 h4{
+    grid-area:precio1;
+}
+.producto1 img{
+    grid-area:img1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.producto2{
+    display: grid;
+    grid-template-areas: ". img2 producto2"
+                         ". img2 precio2"
+                         ". img2 precio2";
+    grid-template-columns: 10px;  
+}
+.producto2 h3{
+    grid-area:producto2;
+}
+.producto2 h4{
+    grid-area:precio2;
+}
+.producto2 img{
+    grid-area:img2;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ########################################### ------------- #############################################################*/
+
+/* ########################################### FANARTS-TOP #############################################################*/
+.fanarts-top1{
+    display: grid;
+    grid-template-areas: ". foto1 top1"
+                         ". foto1 nombre1"
+                         ". foto1 nombre1";
+    grid-template-columns: 10px;  
+}
+.fanarts-top1 h2{
+    grid-area:  top1;
+    margin-top: 20px;
+}
+.fanarts-top1 h3{
+    grid-area:  nombre1;
+    color: white;
+}
+.fanarts-top1 img{
+    grid-area:  foto1;
+    border: 4px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.fanarts-top2{
+    display: grid;
+    grid-template-areas: ". foto2 foto2"
+                         ". top2 top2"
+                         ". nombre2 nombre2";
+    grid-template-columns: 10px;  
+}
+.fanarts-top2 h2{
+    grid-area:  top2;
+    margin-top: 20px;
+}
+.fanarts-top2 h3{
+    grid-area:  nombre2;
+    color: white;
+}
+.fanarts-top2 img{
+    grid-area:  foto2;
+    border: 4px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.fanarts-top3{
+    display: grid;
+    grid-template-areas: ". foto3 foto3"
+                         ". top3 top3"
+                         ". nombre3 nombre3";
+    grid-template-columns: 10px;  
+}
+.fanarts-top3 h2{
+    grid-area:  top3;
+    margin-top: 20px;
+}
+.fanarts-top3 h3{
+    grid-area:  nombre3;
+    color: white;
+}
+.fanarts-top3 img{
+    grid-area:  foto3;
+    border: 4px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ########################################### ----------------------- #############################################################*/
+
+@media screen and (max-width: 1024px){
+    .back-vid{
+        position: relative;
+        top: 0;
+        width: 1024px;
+        z-index: -1;
+    }
+    .titulo{
+        margin-top: 20px;
+    }
+    .ventas {
+        background-color: red;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .formulario{
+        margin-left: 250px;
+        margin-right: 250px; 
+    }
+    .formulario input{
+        font-size: 15px;
+        width: 180px;
+        height: 30px;
+    }
+    .fanarts-top2 img{
+        width: 90%;
+    }
+    .fanarts-top3 img{
+        width: 90%;
+    }
+    .info-StarWars{
+        margin-left: 10px;
+        margin-right: 10px;
+        grid-template-columns: 30px;
+        grid-template-areas: "texto texto texto"
+                             "gif gif gif"
+                             "texto2 texto2 texto2"
+                             "texto3 texto3 texto3";  
+    }
+    .gifluke{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 952px){
+    .back-vid{
+        position: relative;
+        top: 0;
+        width: 900px;
+        z-index: -1;
+    }
+    .ventas {
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 858px){
+    body{
+        width : 100vh;
+    }
+    .navbar{
+        padding: 5px;
+        width : 100vh;
+        display: grid;
+    }
+    .navbar ul{
+        padding: 0px;
+    }
+    .navbar ul a{
+        font-size: 30px;
+    }
+    .back-vid{
+        position: relative;
+        top: 0;
+        width: 450px;
+        z-index: -1;
+    }
+    /* PRODUCTOS.HTML */
+    .ventas {
+        background-color: yellow;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .formulario{
+        margin-left: 150px;
+        margin-right: 150px; 
+    }
+    .formulario input{
+        font-size: 20px;
+        width: 240px;
+        height: 50px;
+    }
+    /* MAIN SECTION INDEX.HTML */
+    .info-StarWars{
+        margin-left: 10px;
+        margin-right: 10px;
+        grid-template-columns: 30px;
+        grid-template-areas: "texto texto texto"
+                             "gif gif gif"
+                             "texto2 texto2 texto2"
+                             "texto3 texto3 texto3";  
+    }
+    .fanarts-top2 img{
+        width: 90%;
+    }
+    .fanarts-top3 img{
+        width: 90%;
+    }
+    .gifluke{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .titulo{
+        margin-top: 20px;
+    }
+    .texto{
+        font-size: 30px;
+        line-height: 65px;
+    }
+    .texto2{
+        font-size: 30px;
+        line-height: 65px;
+    }
+    .texto3{
+        font-size: 30px;
+        line-height: 65px;
+    }
+    .texto7{
+        font-size: 30px;
+        line-height: 65px;
+    }
 }
