@@ -32,6 +32,12 @@ body {
     list-style: none;
 }
 
+.navbar ul li a:hover{
+   color: rgb(243, 227, 6);
+   transition: 0.5s;
+   cursor: pointer;
+}
+
 .navbar ul li a {
     text-decoration: none;
     color: rgba(246, 246, 252, 0.781);
